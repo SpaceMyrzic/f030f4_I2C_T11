@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{ed00321c-db41-4083-99d3-6478ef477a56}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header files">
+      <UniqueIdentifier>{7e3c75e2-f81f-4a1d-aa57-4961da8ff75f}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="VisualGDB settings">
+      <UniqueIdentifier>{42268ac8-7361-4707-907b-79259b58987d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\StdPeriph">
+      <UniqueIdentifier>{d5772150-3342-43ba-a6e4-c08a556811e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\StdPeriph">
+      <UniqueIdentifier>{0ebd8548-9472-4091-9357-a259a0ad6dba}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="stm32.props">
+      <Filter>Source files\StdPeriph</Filter>
+    </None>
+    <ClCompile Include="$(BSP_ROOT)\STM32F0xxxx\StartupFiles\startup_stm32f030x6.c">
+      <Filter>Source files\StdPeriph</Filter>
+    </ClCompile>
+    <ClInclude Include="$(BSP_ROOT)\STM32F0xxxx\CMSIS_StdPeriph\Device\ST\STM32F0xx\Include\stm32f0xx.h">
+      <Filter>Header files\StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32F0xxxx\CMSIS_StdPeriph\Device\ST\STM32F0xx\Include\system_stm32f0xx.h">
+      <Filter>Header files\StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32F0xxxx\CMSIS_StdPeriph\Include\core_cm0.h">
+      <Filter>Header files\StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32F0xxxx\CMSIS_StdPeriph\RTOS\cmsis_os.h">
+      <Filter>Header files\StdPeriph</Filter>
+    </ClInclude>
+    <None Include="f030f4_I2C_T11-Debug.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="f030f4_I2C_T11-Release.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="stm32.xml">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="system_stm32f0xx.c">
+      <Filter>Source files\StdPeriph</Filter>
+    </ClCompile>
+    <ClCompile Include="main.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
